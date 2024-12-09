@@ -427,6 +427,11 @@ strong {
     display: block;
 }
 
+.hidden img {
+    width: 60%;
+    min-width: 200px;
+}
+
 .view-more.active {
     display: none;
 }
