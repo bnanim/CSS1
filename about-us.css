@@ -300,6 +300,7 @@ main {
 
 .leaders-cards {
     display: flex;
+    flex-direction: row;
     column-gap: 20px;
     row-gap: 50px;
     flex-wrap: wrap;
@@ -351,7 +352,7 @@ main {
     margin: 0 auto;
 }
 
-h3 {
+.card h3 {
     text-align: left;
     max-width: 80%;
     margin: 0 auto;
@@ -407,6 +408,37 @@ strong {
     margin-bottom: 50px;
 }
 
+.clubs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.club {
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden.active {
+    display: block;
+}
+
+.view-more.active {
+    display: none;
+}
+
+.view-less {
+    display: none;
+}
+
+.view-less.active {
+    display: block;
+}
+
 /*MAIN------*/
 
 
@@ -447,5 +479,9 @@ strong {
 
     .ach-img {
         width: 100%;
+    }
+
+    .card {
+        max-width: 300px;
     }
 }
